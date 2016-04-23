@@ -1,20 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Vienmar Ogrimen</title>
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css"  media="screen,projection"/>
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!--Import favicon-->
-        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="keywords" content="vienmar salas ogrimen web developer" />
+        <meta name="description" content="Vienmar Salas Ogrimen is a Web Developer who is a Bachelor of Science in Information Technology (BSIT) graduate of Eastern Visayas State University.">
+        <meta name="author" content="Vienmar S. Ogrimen">
+
+        <meta name="twitter:site" content="@vsogrimen" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@vsogrimen" />
+        <meta name="twitter:image" content="https://vsogrimen.github.io/assets/img/vienmar.jpg" />
+        <meta name="twitter:url" content="https://vsogrimen.github.io/" />
+        <meta name="twitter:title" content="Vienmar S. Ogrimen" />
+        <meta name="twitter:description" content="Vienmar Salas Ogrimen is a Web Developer who is a Bachelor of Science in Information Technology (BSIT) graduate of Eastern Visayas State University." />
+
+        <meta property="fb:admins" content="vsogrimen" />
+        <meta property="og:url" content="https://vsogrimen.github.io/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Vienmar S. Ogrimen" />
+        <meta property="og:description" content="Vienmar Salas Ogrimen is a Web Developer who is a Bachelor of Science in Information Technology (BSIT) graduate of Eastern Visayas State University." />
+        <meta property="og:image" content="https://vsogrimen.github.io/assets/img/vienmar.jpg" />
+
+        <title>Vienmar S. Ogrimen</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+
+            .profile-img{
+                width: 200px;
+                height: 200px;
+            }
+
+            #home  {
+                margin-top: 70px;
+                text-align: center;
+            }
+
+            #home h1{
+                font-size: 24px;
+            }
+
+            #home h2{
+                font-size: 18px;
+                margin-top: 0px;
+            }
+
+            #about-me h2{
+                text-align: center;
+            }
+
+            #about-me h2,
+            #knowledge h2,
+            #tools h2{
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            #social-btns {
+                margin-top: 20px;
+            }
+
+            #social-btns a{
+                color: gray;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            #social-btns a:hover{
+                color: tomato;
+            }
+
+            .chip a{
+                color: #007071;
+            }
+
+            .chip {
+                display: inline-block;
+                padding: 0 25px;
+                height: 32px;
+                font-size: 12px;
+                line-height: 32px;
+                border-radius: 25px;
+                background-color: #F3F3F3;
+                margin-top: 5px;
+            }
+
+            .chip img {
+                float: left;
+                margin: 0 10px 0 -25px;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+            }
+
+            footer {
+                padding: 50px 0;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="hidden navbar navbar-inverse navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Bootstrap theme</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </nav>
+        </header>
+        <section id="home" class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <img class="center-block img-circle profile-img" src="assets/img/vienmar.jpg" alt="Vienmar Ogrimen">
+
+                        <h1>Vienmar S. Ogrimen</h1>
+                        <em><h2 class="text-muted">Web Developer</h2></em>
+                        <div id="social-btns">
+                            <a href="https://github.com/vsogrimen" title="Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://stackoverflow.com/users/4785520/vsogrimen" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/vsogrimen" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/vsogrimen" title="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <h2>About Vienmar</h2>
+
+                        <p class="text-justify">
+                            Vienmar Salas Ogrimen is a Web Developer who is a Bachelor of Science in Information Technology  (BSIT)  graduate of <a href="http://www.evsu.edu.ph/" target="_blank">Eastern Visayas State University</a>.
+                        </p>
+                        <p class="text-justify">
+                            He is a hard working person, He loves learning new things, He constantly improves his skills to caught up with the current standards of Web Development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="knowledge" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <h2>Stack</h2>
+
+                        <p class="text-center">
+                            Here is the list of tools, languages and frameworks he uses.
+                        </p>
+
+                        <h3 class="text-muted">Languages</h3>
+
+                        <!-- HTML -->
+                        <div class="chip">
+                            <img src="assets/img/tools/html.png" title ="HTML">
+                            <a href="https://www.w3.org/html/" target="_blank">
+                                HTML
+                            </a>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class="chip">
+                            <img src="assets/img/tools/css.jpg" title ="CSS">
+                            <a href="https://www.w3.org/CSS/" target="_blank">
+                                CSS
+                            </a>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="chip">
+                            <img src="assets/img/tools/javascript.jpg" title ="JavaScript">
+                            <a href="https://www.javascript.com/" target="_blank">
+                                JavaScript
+                            </a>
+                        </div>
+
+                        <!-- php -->
+                        <div class="chip">
+                            <img src="assets/img/tools/php.png" title ="php">
+                            <a href="https://secure.php.net/" target="_blank">
+                                PHP
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">Database</h3>
+
+                        <!-- mysql -->
+                        <div class="chip">
+                            <img src="assets/img/tools/mysql.gif" title ="mysql">
+                            <a href="https://www.mysql.com/" target="_blank">
+                                mysql
+                            </a>
+                        </div>
+
+                        <!-- mongodb -->
+                        <div class="chip">
+                            <img src="assets/img/tools/mongodb.ico" title ="mongoDB">
+                            <a href="https://www.mongodb.org/" target="_blank">
+                                mongoDB
+                            </a>
+                        </div>
+
+
+                        <h3 class="text-muted">Web Services</h3>
+
+                        <!-- Digital Ocean -->
+                        <div class="chip">
+                            <img src="assets/img/tools/digital-ocean.jpg" title ="Digital Ocean">
+                            <a href="https://m.do.co/c/410922d421e1" target="_blank">
+                                Digital Ocean
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">Development Tools</h3>
+
+                        <!-- phpstorm -->
+                        <div class="chip">
+                            <img src="assets/img/tools/phpstorm.ico" title ="PHPStorm">
+                            <a href="https://www.jetbrains.com/phpstorm/" target="_blank">
+                                PHPStorm
+                            </a>
+                        </div>
+
+                        <!-- xdebug -->
+                        <div class="chip">
+                            <img src="assets/img/tools/xdebug.png" title ="XDebug" >
+                            <a href="https://xdebug.org/" target="_blank">
+                                XDebug
+                            </a>
+                        </div>
+
+                        <!-- sublime -->
+                        <div class="chip">
+                            <img src="assets/img/tools/sublime-text.png" title ="Sublime Text" >
+                            <a href="https://www.sublimetext.com/3" target="_blank">
+                                Sublime Text
+                            </a>
+                        </div>
+
+                        <!-- Vagrant -->
+                        <div class="chip">
+                            <img src="assets/img/tools/vagrant.ico" title ="guthub">
+                            <a href="https://www.vagrantup.com/" target="_blank">
+                                Vagrant
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">Testing Tools</h3>
+
+                        <!-- PHPUnit -->
+                        <div class="chip">
+                            <img src="assets/img/tools/phpunit.png" title ="PHPUnit">
+                            <a href=""https://www.PHPUnit.org/"" target="_blank">
+                                PHPUnit
+                            </a>
+                        </div>
+
+                        <!-- Selenium IDE -->
+                        <div class="chip">
+                            <img src="assets/img/tools/selenium-ide.png" title ="Selenium IDE">
+                            <a href="http://www.seleniumhq.org/" target="_blank">
+                                Selenium IDE
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">OS / Servers</h3>
+
+                        <!-- CentOS -->
+                        <div class="chip">
+                            <img src="assets/img/tools/centos.png" title ="CentOS">
+                            <a href="https://www.centos.org/" target="_blank">
+                                CentOS
+                            </a>
+                        </div>
+
+                        <!-- Ubuntu -->
+                        <div class="chip">
+                            <img src="assets/img/tools/ubuntu.png" title ="Ubuntu">
+                            <a href="http://www.ubuntu.com/" target="_blank">
+                                Ubuntu
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">VCS</h3>
+
+                        <!-- Git -->
+                        <div class="chip">
+                            <img src="assets/img/tools/git.ico" title ="Git">
+                            <a href="https://git-scm.com/" target="_blank">
+                                Git
+                            </a>
+                        </div>
+
+                        <!-- github -->
+                        <div class="chip">
+                            <img src="assets/img/tools/github.png" title ="Github">
+                            <a href="https://github.com/" target="_blank">
+                                Github
+                            </a>
+                        </div>
+
+                        <!-- Bitbucket -->
+                        <div class="chip">
+                            <img src="assets/img/tools/bitbucket.png" title ="Bitbucket">
+                            <a href="https://bitbucket.org/" target="_blank">
+                                Bitbucket
+                            </a>
+                        </div>
+
+                        <h3 class="text-muted">Frameworks</h3>
+
+                        <!-- laravel -->
+                        <div class="chip">
+                            <img src="assets/img/tools/laravel.png" title ="Laravel">
+                            <a href="https://laravel.org/" target="_blank">
+                                Laravel (PHP)
+                            </a>
+                        </div>
+
+                        <!-- CodeIgniter -->
+                        <div class="chip">
+                            <img src="assets/img/tools/codeigniter.png" title ="CodeIgniter">
+                            <a href="https://codeigniter.com/" target="_blank">
+                                CodeIgniter (PHP)
+                            </a>
+                        </div>
+
+                        <!-- JQuery -->
+                        <div class="chip">
+                            <img src="assets/img/tools/jquery.ico" title ="JQuery">
+                            <a href="https://jquery.com/" target="_blank">
+                                JQuery (JS)
+                            </a>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div class="chip">
+                            <img src="assets/img/tools/bootstrap.png" title ="Bootstrap">
+                            <a href="https://getbootstrap.com/" target="_blank">
+                                Bootstrap
+                            </a>
+                        </div>
+
+                        <!-- materializecss -->
+                        <div class="chip">
+                            <img src="assets/img/tools/materializecss.png" title ="Materialize">
+                            <a href="http://materializecss.com/" target="_blank">
+                                Materialize
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center">Copyright © 2016</footer>
+        <!--
+            jQuery (necessary for Bootstrap's JavaScript plugins)
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        -->
     </body>
 </html>
